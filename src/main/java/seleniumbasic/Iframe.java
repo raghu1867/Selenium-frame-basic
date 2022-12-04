@@ -22,6 +22,7 @@ public class Iframe {
 
 		// By executing a java script
 		JavascriptExecutor exe = (JavascriptExecutor) driver;
+		/////
 		Integer numberOfFrames = Integer.parseInt(exe.executeScript("return window.length").toString());
 		System.out.println("Number of iframes on the page are " + numberOfFrames);
 
@@ -34,6 +35,10 @@ public class Iframe {
         Integer inter = Integer.parseInt(js.executeScript("return window.length").toString());
         System.out.println(inter);
 		List<WebElement> lis = driver.findElements(By.tagName("iframe"));
+		
+		
+		
+		
 		
 		
 		
