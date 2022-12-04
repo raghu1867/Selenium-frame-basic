@@ -34,6 +34,9 @@ public class Iframe {
         Integer inter = Integer.parseInt(js.executeScript("return window.length").toString());
         System.out.println(inter);
 		List<WebElement> lis = driver.findElements(By.tagName("iframe"));
+		
+		
+		
 		System.out.println(lis.size());
 
 	}
